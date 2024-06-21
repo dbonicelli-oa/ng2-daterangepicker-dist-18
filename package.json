@@ -1,0 +1,45 @@
+{
+  "name": "ng2-daterangepicker",
+  "version": "3.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbonicelli-oa/ng2-daterangepicker"
+  },
+  "bugs": {
+    "url": "https://github.com/dbonicelli-oa/ng2-daterangepicker/issues"
+  },
+  "homepage": "https://github.com/dbonicelli-oa/ng2-daterangepicker#readme",
+  "license": "MIT",
+  "dependencies": {
+    "daterangepicker": "^3.0.5",
+    "tslib": "^2.6.2"
+  },
+  "peerDependencies": {
+    "@angular/common": "18.0.2",
+    "@angular/core": "18.0.2",
+    "jquery": "^3.5.0",
+    "@types/jquery": "^3.3.32"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "resolutions": {
+    "source-map": "^0.8.0-beta.0"
+  },
+  "module": "fesm2022/ng2-daterangepicker.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ng2-daterangepicker.mjs",
+      "esm": "./esm2022/ng2-daterangepicker.mjs",
+      "default": "./fesm2022/ng2-daterangepicker.mjs"
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}

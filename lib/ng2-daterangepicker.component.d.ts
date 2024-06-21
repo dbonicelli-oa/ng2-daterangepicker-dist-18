@@ -1,0 +1,31 @@
+import { AfterViewInit, OnDestroy, DoCheck, EventEmitter, ElementRef, KeyValueDiffers } from '@angular/core';
+import 'daterangepicker';
+import { DaterangepickerConfig } from "./ng2-daterangepicker.service";
+import * as i0 from "@angular/core";
+export declare class DaterangepickerComponent implements AfterViewInit, OnDestroy, DoCheck {
+    private input;
+    private config;
+    private differs;
+    private activeRange;
+    private targetOptions;
+    private _differ;
+    datePicker: any;
+    options: any;
+    selected: EventEmitter<any>;
+    cancelDaterangepicker: EventEmitter<any>;
+    applyDaterangepicker: EventEmitter<any>;
+    hideCalendarDaterangepicker: EventEmitter<any>;
+    showCalendarDaterangepicker: EventEmitter<any>;
+    hideDaterangepicker: EventEmitter<any>;
+    showDaterangepicker: EventEmitter<any>;
+    constructor(input: ElementRef, config: DaterangepickerConfig, differs: KeyValueDiffers);
+    ngAfterViewInit(): void;
+    ngDoCheck(): void;
+    ngOnDestroy(): void;
+    private render;
+    private callback;
+    private destroyPicker;
+    private attachEvents;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DaterangepickerComponent, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DaterangepickerComponent, "[daterangepicker]", never, { "options": { "alias": "options"; "required": false; }; }, { "selected": "selected"; "cancelDaterangepicker": "cancelDaterangepicker"; "applyDaterangepicker": "applyDaterangepicker"; "hideCalendarDaterangepicker": "hideCalendarDaterangepicker"; "showCalendarDaterangepicker": "showCalendarDaterangepicker"; "hideDaterangepicker": "hideDaterangepicker"; "showDaterangepicker": "showDaterangepicker"; }, never, never, false, never>;
+}
